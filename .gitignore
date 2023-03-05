@@ -4,9 +4,9 @@
 __pycache__
 db.sqlite3
 media
-.cources/cources/settings.py
+cources/cources/settings.py
 
-.courcenv
+courcenv
 
 .vscode/* 
 !.vscode/settings.json 
