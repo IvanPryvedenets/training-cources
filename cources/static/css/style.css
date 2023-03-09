@@ -1,91 +1,255 @@
-.container {
-    color: red;
-}
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+.slider {
+  width: 100%;
+  height: 100vh;
   position: relative;
-  margin: auto;
+  overflow: hidden;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.slider-container {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  transition: left 0.5s ease;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
+.slider-image {
+  width: 33.33%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.slider-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-text {
   position: absolute;
+  padding-left: 100px;
   top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  left: 0;
+  width: 45%;
+  height: 100%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.text-box {
+  top: 50%;
+  height: 30%;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+.slider-controls {
+  top: 100%;
   position: absolute;
-  bottom: 8px;
+  transform: translateY(-50%);
   width: 100%;
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+.slider-button {
   display: inline-block;
-  transition: background-color 0.6s ease;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  outline: none;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active {
+  left: 0;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.services .row {
+  width: 100%;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.services .col:nth-of-type(odd) {
+  background-color: silver;
+  padding: 4%;
+  text-align: center;
+}
+
+.services .col:nth-of-type(even) {
+  background-color: white;
+  padding: 4%;
+  text-align: center;
+}
+
+.services img {
+  height: 40px;
+  margin: 30px;
+}
+
+.university-image-border {
+  width: 70px;
+  height: 70px;
+  background-color: orange;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.about-university .about-university-image {
+  position: relative;
+  top: 20px;
+  height: 30px;
+}
+
+.about-university .col-sm-7 .row {
+  margin-top: 50px;
+}
+
+.about-university .col-sm-6 {
+  padding: 20px 0;
+}
+
+.university-text-border {
+  position: relative;
+  text-align: left;
+  width: 75%;
+}
+
+.student-image-border, .university-info-image-border, .course-image-border {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.student-image-border img, .university-info-image-2, .course-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.university-info-image-2 {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.university-info {
+  position: relative;
+  height: 700px;
+  width: 100%;
+}
+
+.university-info-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 10% 0;
+}
+
+.university-info .university-info-image-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.university-info .container {
+  padding: 0;
+}
+
+.university-info .container .row:nth-child(1) {
+  margin-bottom: 90px;
+}
+
+.university-info .container .row:nth-child(1) .col:nth-child(2) {
+  padding: 0 10px 0 60px;
+}
+
+.university-info .container .row:nth-child(2) {
+  text-align: center;
+}
+
+.university-info .container .row:nth-child(2) .col {
+  padding: 0;
+}
+
+.items-box {
+  padding: 100px 10px;
+  height: auto;
+}
+
+.about-content-headers {
+  margin-bottom: 50px;
+}
+
+.about-content-headers .headers {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.card .card-body {
+  padding: 20px 0;
+}
+
+.card-adds {
+  margin-top: 20px;
+  position: relative;
+  top: 5px;
+  color: silver;
+}
+
+.card-adds span {
+  position: relative;
+  top: 3px;
+}
+
+.card-img-adds {
+  height: 15px;
+}
+
+.teacher-box {
+  background-color: rgba(233, 233, 233, 0.3);
+}
+
+.teacher-box .card {
+  text-align: center;
+  background-color: rgba(233, 233, 233, 0.015);
+}
+
+.teacher-box .card-img-top {
+  height: 60vh;
+}
+
+.teacher-box .card-adds {
+  margin: 0 0 10px 0;
+}
+
+input {
+  background-color:transparent !important;
+  border:none !important;
+}
+
+:-ms-input-placeholder {
+  color: white;
 }

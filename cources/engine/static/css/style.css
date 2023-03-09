@@ -5,6 +5,13 @@
   overflow: hidden;
 }
 
+.slider-introduction {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+
 .slider-container {
   display: flex;
   width: 300%;
@@ -95,13 +102,12 @@
 .university-image-border {
   width: 70px;
   height: 70px;
-  float: left;
   background-color: orange;
   border-radius: 50%;
   text-align: center;
 }
 
-.about-university img {
+.about-university .about-university-image {
   position: relative;
   top: 20px;
   height: 30px;
@@ -117,22 +123,177 @@
 
 .university-text-border {
   position: relative;
-  float: right;
   text-align: left;
   width: 75%;
 }
 
-.student-image-border {
+.student-image-border, .university-info-image-border, .course-image-border {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.student-image-border img {
+.student-image-border img, .university-info-image-2, .course-image {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   top: 0;
   left: 0;
+}
+
+.university-info-image-2 {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.university-info {
+  position: relative;
+  height: 700px;
+  width: 100%;
+}
+
+.university-info-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 10% 0;
+}
+
+.university-info .university-info-image-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.university-info .container {
+  padding: 0;
+}
+
+.university-info .container .row:nth-child(1) {
+  margin-bottom: 90px;
+}
+
+.university-info .container .row:nth-child(1) .col:nth-child(2) {
+  padding: 0 10px 0 60px;
+}
+
+.university-info .container .row:nth-child(2) {
+  text-align: center;
+}
+
+.university-info .container .row:nth-child(2) .col {
+  padding: 0;
+}
+
+.items-box {
+  padding: 100px 10px;
+  height: auto;
+}
+
+.about-content-headers {
+  margin-bottom: 50px;
+}
+
+.about-content-headers .headers {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.card .card-body {
+  padding: 20px 0;
+}
+
+.card-adds {
+  margin-top: 20px;
+  position: relative;
+  top: 5px;
+  color: silver;
+}
+
+.card-adds span {
+  position: relative;
+  top: 3px;
+}
+
+.card-img-adds {
+  height: 15px;
+}
+
+.teacher-box, .blog-box {
+  background-color: rgba(233, 233, 233, 0.3);
+}
+
+.teacher-box .card {
+  text-align: center;
+  background-color: rgba(233, 233, 233, 0.015);
+}
+
+.teacher-box .card-img-top {
+  height: 60vh;
+}
+
+.teacher-box .card-adds {
+  margin: 0 0 10px 0;
+}
+
+.blog-box .card-adds {
+  margin: 0 0 10px 0;
+}
+
+.blog-box .card-adds span {
+  top: 0;
+}
+
+.blog-box .card-body {
+  padding-bottom: 0;
+}
+
+.request .university-info-image-1, .request .university-info {
+  height: 650px;
+}
+
+.university-info-text-border {
+  margin-bottom: 50px;
+}
+
+.request .container .row:nth-child(1) {
+  margin-bottom: 0;
+}
+
+input, textarea, select {
+  background-color: transparent !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-radius: 0 !important;
+  margin-bottom: 30px !important;
+  color: white !important;
+}
+
+.form-control::placeholder {
+  color: white !important;
+}
+
+select option {
+  color: black !important;
+}
+
+.form-select, textarea {
+  height: 48px;
 }
