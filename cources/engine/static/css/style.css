@@ -1,3 +1,22 @@
+.navbar {
+  background-color: silver;
+  width: 100%;
+}
+
+.navbar .nav-link {
+  padding: 20px 15px;
+  color: white;
+}
+
+.navbar .row {
+  width: 100%;
+}
+
+.navbar form {
+  width: 59%;
+  padding: 15px;
+}
+
 .slider {
   width: 100%;
   height: 100vh;
@@ -78,23 +97,23 @@
   left: 0;
 }
 
-.services .row {
+.servises .row {
   width: 100%;
 }
 
-.services .col:nth-of-type(odd) {
+.servises .col:nth-of-type(odd) {
   background-color: silver;
   padding: 4%;
   text-align: center;
 }
 
-.services .col:nth-of-type(even) {
+.servises .col:nth-of-type(even) {
   background-color: white;
   padding: 4%;
   text-align: center;
 }
 
-.services img {
+.servise-image {
   height: 40px;
   margin: 30px;
 }
@@ -107,7 +126,7 @@
   text-align: center;
 }
 
-.about-university .about-university-image {
+.small-icon {
   position: relative;
   top: 20px;
   height: 30px;
@@ -127,13 +146,13 @@
   width: 75%;
 }
 
-.student-image-border, .university-info-image-border, .course-image-border {
+.student-image-border, .university-info-image-border, .course-image-border .galery-image-border, .footer-image-border {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.student-image-border img, .university-info-image-2, .course-image {
+.student-image-border img, .university-info-image-2, .course-image, .galery-image-border img, footer img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -148,6 +167,11 @@
   object-fit: cover;
   top: 0;
   left: 0;
+}
+
+.galery-image-border img {
+  position: relative;
+  height: 50vh;
 }
 
 .university-info {
@@ -194,9 +218,14 @@
   padding: 0;
 }
 
-.items-box {
+.items-box, footer {
   padding: 100px 10px;
   height: auto;
+}
+
+footer {
+  background-color: rgb(26, 26, 26);
+  color:#fff;
 }
 
 .about-content-headers {
@@ -276,7 +305,7 @@
   margin-bottom: 0;
 }
 
-input, textarea, select {
+.request input, .request textarea, .request select {
   background-color: transparent !important;
   border-top: none !important;
   border-right: none !important;
@@ -294,6 +323,53 @@ select option {
   color: black !important;
 }
 
-.form-select, textarea {
+.request .form-select, textarea {
   height: 48px;
+}
+
+.galery .col {
+  padding: 0;
+}
+
+.galery .row {
+  width: 100%;
+  margin: 0;
+}
+
+footer .row .row-cols-2, .row .row-cols-3, .links-box {
+  margin-top: 50px;
+}
+
+footer .row .row-cols-2 span {
+  display: block;
+  padding: 10px 0;
+}
+
+footer .small-icon {
+  position: relative;
+  top: 0;
+  height: 20px;
+}
+
+.social-network-link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.social-network-link img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+footer .row .row-cols-3 .col {
+  padding: 0 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
 }

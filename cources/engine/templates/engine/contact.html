@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contact %}
+    <div class="about-university request">
+        <div class="university-info">
+            <div class="university-info-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            
+                        </div>
+                        <div class="col">
+                            <div class="university-info-text-border">
+                                <h1>Fox University</h1>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <textarea class="form-control" placeholder=".form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="col">
+                                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                                    <button type="button" class="btn btn-dark">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <img class="university-info-image-1" src="{% static 'images/students.jpg' %}">
+        </div>
+    </div>
+{% endblock %}

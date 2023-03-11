@@ -1,5 +1,68 @@
 {% extends 'base.html' %}
+{% load static %}
 
-{% block content %}
-    <h1>hello world</h1>
+{% block home %}
+<div class="slider">
+    <div class="slider-container">
+        <div class="slider-image active">
+            <img src="{% static 'images/1.jpg' %}" alt="Image 1">
+            <div class="slider-text-box">
+                <div class="slider-text">
+                    <div class="text-box"></div>
+                        <h2>Заголовок 3</h2>
+                        <p>Опис до картинки 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-image">
+            <img src="{% static 'images/2.jpg' %}" alt="Image 2">
+            <div class="slider-text-box">
+                <div class="slider-text">
+                    <h2>Заголовок 3</h2>
+                    <p>Опис до картинки 3</p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-image">
+            <img src="{% static 'images/3.png' %}" alt="Image 3">
+            <div class="slider-text-box">
+                <div class="slider-text">
+                    <h2>Заголовок 3</h2>
+                    <p>Опис до картинки 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="slider-controls">
+            <button class="slider-button" onclick="changeSlide(-1)"></button>
+            <button class="slider-button" onclick="changeSlide(1)"></button>
+            <button class="slider-button" onclick="changeSlide(-1)"></button>
+        </div>
+    </div>
+
+    <div class="servises">
+        <div class="row">
+            <div class="col">
+                <img class="servise-image" src="{% static 'images/marker.png' %}">
+                <h5>Service 1</h5>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+            </div>
+            <div class="col">
+                <img class="servise-image" src="{% static 'images/house-building.png' %}">
+                <h5>Service 2</h5>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+            </div>
+            <div class="col">
+                <img class="servise-image" src="{% static 'images/envelope.png' %}">
+                <h5>Service 3</h5>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+            </div>
+            <div class="col">
+                <img class="servise-image" src="{% static 'images/globe.png' %}">
+                <h5>Service 4</h5>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+            </div>
+        </div>
+    </div>
 {% endblock %}

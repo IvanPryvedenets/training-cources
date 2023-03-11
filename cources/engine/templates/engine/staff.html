@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block courses %}
+    <div class="items-box teacher-box">
+        <div class="container-fluid">
+            <div class="row about-content-headers">
+                <div class="col">
+                    <div class="headers">
+                        <h1>Certified Teachers</h1>
+                        <p>
+                            Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="{% static 'images/english course.jpg' %}" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Card title</h5>
+                            <div class="card-adds">
+                                <div class="row">
+                                    <div class="col">
+                                        English Teacher
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
