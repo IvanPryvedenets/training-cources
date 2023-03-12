@@ -1,7 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block about %}
+{% block content %}
+    <div class="page-banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1>About Us</h1>
+                    <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'images/students.jpg' %}">
+    </div>
     <div class="about-university">
         <div class="container">
             <div class="row">
@@ -119,28 +130,6 @@
         </div>
     </div>
 
-    <div class="galery">
-        <div class="row">
-            <div class="col">
-                <div class="galery-image-border">
-                    <img src="{% static 'images/student.jpg' %}">
-                </div>
-            </div>
-            <div class="col">
-                <div class="galery-image-border">
-                    <img src="{% static 'images/student.jpg' %}">
-                </div>
-            </div>
-            <div class="col">
-                <div class="galery-image-border">
-                    <img src="{% static 'images/student.jpg' %}">
-                </div>
-            </div>
-            <div class="col">
-                <div class="galery-image-border">
-                    <img src="{% static 'images/student.jpg' %}">
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include 'engine/galery.html' %}
+
 {% endblock %}

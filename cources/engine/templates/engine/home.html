@@ -1,39 +1,39 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block home %}
-<div class="slider">
-    <div class="slider-container">
-        <div class="slider-image active">
-            <img src="{% static 'images/1.jpg' %}" alt="Image 1">
-            <div class="slider-text-box">
-                <div class="slider-text">
-                    <div class="text-box"></div>
+{% block content %}
+    <div class="slider">
+        <div class="slider-container">
+            <div class="slider-image active">
+                <img src="{% static 'images/1.jpg' %}" alt="Image 1">
+                <div class="slider-text-box">
+                    <div class="slider-text">
+                        <div class="text-box">
+                            <h2>Заголовок 3</h2>
+                            <p>Опис до картинки 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-image">
+                <img src="{% static 'images/2.jpg' %}" alt="Image 2">
+                <div class="slider-text-box">
+                    <div class="slider-text">
+                        <h2>Заголовок 3</h2>
+                        <p>Опис до картинки 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-image">
+                <img src="{% static 'images/3.png' %}" alt="Image 3">
+                <div class="slider-text-box">
+                    <div class="slider-text">
                         <h2>Заголовок 3</h2>
                         <p>Опис до картинки 3</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="slider-image">
-            <img src="{% static 'images/2.jpg' %}" alt="Image 2">
-            <div class="slider-text-box">
-                <div class="slider-text">
-                    <h2>Заголовок 3</h2>
-                    <p>Опис до картинки 3</p>
-                </div>
-            </div>
-        </div>
-        <div class="slider-image">
-            <img src="{% static 'images/3.png' %}" alt="Image 3">
-            <div class="slider-text-box">
-                <div class="slider-text">
-                    <h2>Заголовок 3</h2>
-                    <p>Опис до картинки 3</p>
-                </div>
-            </div>
-        </div>
-    </div>
         <div class="slider-controls">
             <button class="slider-button" onclick="changeSlide(-1)"></button>
             <button class="slider-button" onclick="changeSlide(1)"></button>
@@ -65,4 +65,242 @@
             </div>
         </div>
     </div>
+
+    <div class="about-university">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col">
+                            <h1>What We Offer</h1>
+                            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
+                        </div>
+                    </div>
+                    <div class="row row-cols-2 row-cols-lg-2">
+                        <div class="col-8 col-sm-6">
+                            <div class="university-image-border">
+                                <img class="small-icon" src="{% static 'images/apps.png' %}">
+                            </div>
+                            <div class="university-text-border">
+                                <h4>Certified Teachers</h1>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-6">
+                            <div class="university-image-border">
+                                <img class="small-icon" src="{% static 'images/briefcase.png' %}">
+                            </div>
+                            <div class="university-text-border">
+                                <h4>Safety First</h1>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-6">
+                            <div class="university-image-border">
+                                <img class="small-icon" src="{% static 'images/chart-histogram.png' %}">
+                            </div>
+                            <div class="university-text-border">
+                                <h4>Sufficient Classrooms</h1>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-6">
+                            <div class="university-image-border">
+                                <img class="small-icon" src="{% static 'images/clock.png' %}">
+                            </div>
+                            <div class="university-text-border">
+                                <h4>Regular Classes</h1>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-6">
+                            <div class="university-image-border">
+                                <img class="small-icon" src="{% static 'images/envelope.png' %}">
+                            </div>
+                            <div class="university-text-border">
+                                <h4>Sports Facilities</h1>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-6">
+                            <div class="university-image-border">
+                                <img class="small-icon" src="{% static 'images/list-check.png' %}">
+                            </div>
+                            <div class="university-text-border">
+                                <h4>Creative Lessons</h1>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="student-image-border">
+                        <img src="{% static 'images/student.jpg' %}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="university-info">
+            <div class="university-info-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="university-info-image-border">
+                                <img class="university-info-image-2" src="{% static 'images/student.jpg' %}">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="university-info-text-border">
+                                <h1>Fox University</h1>
+                                <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. <br> <br>
+
+                                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h1>18</h1>
+                            <p>Certified Teachers</p>
+                        </div>
+                        <div class="col">
+                            <h1>40</h1>
+                            <p>Students</p>
+                        </div>
+                        <div class="col">
+                            <h1>20</h1>
+                            <p>Courses</p>
+                        </div>
+                        <div class="col">
+                            <h1>46</h1>
+                            <p>Awards Won</p>
+                        </div>
+                    </div> 
+                </div>
+                </div>
+            <img class="university-info-image-1" src="{% static 'images/students.jpg' %}">
+        </div>
+    </div>
+
+    <div class="items-box">
+        <div class="container-fluid">
+            <div class="row about-content-headers">
+                <div class="col">
+                    <div class="headers">
+                        <h1>Our Courses</h1>
+                        <p>
+                            Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="{% static 'images/english course.jpg' %}" class="card-img-top">
+                        <div class="card-adds">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="{% static 'images/user.png' %}" class="card-img-adds">
+                                    <span>Teacher</span>
+                                </div>
+                                <div class="col">
+                                    <img src="{% static 'images/apps.png' %}" class="card-img-adds">
+                                    <span>Places</span>
+                                </div>
+                                <div class="col">
+                                    <img src="{% static 'images/calendar.png' %}" class="card-img-adds">
+                                    <span>Terms</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <button type="button" class="btn btn-dark">Dark</button>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="items-box teacher-box">
+        <div class="container-fluid">
+            <div class="row about-content-headers">
+                <div class="col">
+                    <div class="headers">
+                        <h1>Certified Teachers</h1>
+                        <p>
+                            Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="{% static 'images/english course.jpg' %}" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Card title</h5>
+                            <div class="card-adds">
+                                <div class="row">
+                                    <div class="col">
+                                        English Teacher
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-university request">
+        <div class="university-info">
+            <div class="university-info-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            
+                        </div>
+                        <div class="col">
+                            <div class="university-info-text-border">
+                                <h1>Fox University</h1>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <textarea class="form-control" placeholder=".form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="col">
+                                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                                    <button type="button" class="btn btn-dark">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <img class="university-info-image-1" src="{% static 'images/students.jpg' %}">
+        </div>
+    </div>
+    
+    {% include 'engine/galery.html' %}
+
 {% endblock %}

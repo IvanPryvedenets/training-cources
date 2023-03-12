@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container access">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+                <h5>Sign in to this servise</h6>
+                <div class="sign-in-box">
+                    <form class="access-form" method="post">{% csrf_token %}
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text">Email</span>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <label for="inputPassword" class="form-label">Password</label>
+                        <label id="forgot-password-link" for="inputPassword" class="form-label"><a href="">Forgot password?</a></label>
+                        <div class="input-group">
+                            <span class="input-group-text">Password</span>
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                        <button type="submit" class="btn btn-dark">Sign In</button>
+                    </form>
+                </div>
+                <div class="sign-in smaller-box">
+                    <h6>New in this servise? <a href="">Create an Account</a></h6>
+                </div>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+{% endblock %}

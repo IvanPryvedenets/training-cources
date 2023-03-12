@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container access">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <h5>Sign Up to this servise</h6>
+                <div class="sign-in-box">
+                    <form class="signup-form" method="post">{% csrf_token %}
+                        <div class="input-group">
+                            <span class="input-group-text">First and last name</span>
+                            <input type="text" aria-label="First name" name="name" class="form-control">
+                            <input type="text" aria-label="Last name" name="last_name" class="form-control">
+                        </div>
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text">Email</span>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <label for="inputPassword" class="form-label">Password</label>
+                        <div class="input-group">
+                            <span class="input-group-text">Password</span>
+                            <input type="password" name="password" class="form-control" id="inputPassword">
+                        </div>
+                        <label for="inputPassword" class="form-label">Confirm Password</label>
+                        <div class="input-group">
+                            <span class="input-group-text">Password</span>
+                            <input type="password" name="confirm_password" class="form-control" id="inputPassword">
+                        </div>
+                        <select name="person" class="form-select" aria-label="Default select example">
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                        </select>
+                        <button type="submit" class="btn btn-dark">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </div>
+{% endblock %}
