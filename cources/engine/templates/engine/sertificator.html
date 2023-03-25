@@ -1,0 +1,35 @@
+{% load static %}
+
+{% block content %}
+<div class="sertificator">
+    <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6">
+            <div class="sign-in-box">
+            <h5>Tell more about your education</h6>
+                <form id="sertificator-form" class="signup-form" method="post">{% csrf_token %}
+                    <div id="serfiticator-forms-box">
+                        <div class="input-group">
+                            <span class="input-group-text">Your hight school</span>
+                            <input class="hight-school-input" type="text" aria-label="Hight school" name="school" class="form-control" maxlength="100" minlength="20" required="True">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">Your courses</span>
+                            <input class="course-input" type="text" aria-label="Courses" name="courses" maxlength="100" minlength="20" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFileSm" class="form-label">Send us your sertificate</label>
+                            <input class="form-control form-control-sm" id="formFileSm" type="file" name="sertificate1" required="True">
+                            <input class="form-control form-control-sm" id="formFileSm" type="file" name="sertificate2">
+                        </div>
+                    </div>
+                    <button id="sertificator-button" type="submit" class="btn btn-dark">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-3">
+        </div>
+    </div>
+</div>
+{% endblock %}

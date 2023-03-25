@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container student-page">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row row-cols-3">
+                    <div class="col-sm-2">
+                        
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="student-image-border">
+                            <img class="student-image" src="{% static 'images/student.jpg' %}">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <span>Online</span>
+                    </div>
+                </div>
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <div class="student-page-name">
+                            <h3>{{ student.name}} {{ student.last_name }}</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="student-page-about">
+                            <div class="row row-cols-2">
+                                <div class="col">From</div>
+                                <div class="col">City</div>
+                                <div class="col">{{ student.person }} since</div>
+                                <div class="col">2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="items-box">
+                    <div class="container-fluid">
+                        <div class="headers">
+                            <h1>Your Courses</h1>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card h-100 border-0">
+                                    <img src="{% static 'images/english course.jpg' %}" class="card-img-top">
+                                    <div class="card-adds">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="{% static 'images/user.png' %}" class="card-img-adds">
+                                                <span>Teacher</span>
+                                            </div>
+                                            <div class="col">
+                                                <img src="{% static 'images/apps.png' %}" class="card-img-adds">
+                                                <span>Places</span>
+                                            </div>
+                                            <div class="col">
+                                                <img src="{% static 'images/calendar.png' %}" class="card-img-adds">
+                                                <span>Terms</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <button type="button" class="btn btn-dark">Dark</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

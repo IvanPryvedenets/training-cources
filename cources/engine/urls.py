@@ -11,4 +11,6 @@ urlpatterns = [
     path('contact/', ContactPage.as_view(), name='contact'),
     path('signin/', SignInPage.as_view(), name='signin'),
     path('signup/', SignUpPage.as_view(), name='signup'),
+    path('student/', StudentPage.as_view(), name='student'),
+    path('teacher/', TeacherPage.as_view(), name='teacher'),
 ]

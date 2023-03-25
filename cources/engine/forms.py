@@ -9,24 +9,24 @@ person = (
 
 
 class SignInForm(forms.Form):
-    email = forms.CharField(max_length=50)
-    password = forms.CharField(widget=forms.PasswordInput())
+    email = forms.CharField(max_length=50, required=True)
+    password = forms.CharField(widget=forms.PasswordInput(), required=True)
 
 
-class SignUpForm(forms.ModelForm):
-    name = forms.CharField(max_length=50)
-    last_name = forms.CharField(max_length=50)
-    email = forms.EmailField(max_length=50)
-    password = forms.CharField(widget=forms.PasswordInput())
-    confirm_password = forms.CharField(widget=forms.PasswordInput())
+class UserForm(forms.ModelForm):
+    name = forms.CharField(max_length=50, required=True)
+    last_name = forms.CharField(max_length=50, required=True)
+    email = forms.EmailField(max_length=50, required=True)
+    password = forms.CharField(widget=forms.PasswordInput(), required=True)
+    confirm_password = forms.CharField(widget=forms.PasswordInput(), required=True)
     person = forms.ChoiceField(choices=person)
 
     class Meta:
-        model=User
+        model=Student
         fields=('name', 'last_name', 'email','password', 'person')
 
     def clean(self):
-        cleaned_data = super(SignUpForm, self).clean()
+        cleaned_data = super(UserForm, self).clean()
         password = cleaned_data.get('password')
         confirm_password = cleaned_data.get('confirm_password')
 
